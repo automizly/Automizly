@@ -69,19 +69,51 @@
   }
   </script>
 
-  <!-- (Opcjonalnie dla lokalnego SEO)
+  <!-- Schema.org: LocalBusiness (SEO lokalne) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Automizly",
+    "image": "https://automizly.pl/logo.png",
     "url": "https://automizly.pl",
     "telephone": "+48 693 945 798",
-    "image": "https://automizly.pl/logo.png",
-    "address": { "@type": "PostalAddress", "addressLocality": "Opole", "addressCountry": "PL" }
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Oleska 2A",
+      "addressLocality": "Opole",
+      "postalCode": "46-024",
+      "addressCountry": "PL"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.667,
+      "longitude": 17.933
+    },
+    "openingHours": "Mo-Fr 09:00-17:00",
+    "sameAs": [
+      "https://www.linkedin.com/company/automizly",
+      "https://www.facebook.com/automizly"
+    ]
   }
   </script>
-  -->
+
+  <!-- Schema.org: BreadcrumbList (okruchy nawigacji) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Strona główna",
+        "item": "https://automizly.pl/"
+      }
+    ]
+  }
+  </script>
 
   <!-- Fonty + bundle -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
