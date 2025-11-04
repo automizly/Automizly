@@ -1,3 +1,5 @@
+# Automizly robots.txt
+# Zezwalamy wszystkim botom na indeksowanie
 User-agent: Googlebot
 Allow: /
 
@@ -12,3 +14,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Lokalizacja mapy witryny
+Sitemap: https://automizly.pl/sitemap.xml
