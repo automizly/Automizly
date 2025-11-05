@@ -1,124 +1,70 @@
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <title>Automizly – Automatyzacje i Agenci AI dla Biznesu (MŚP)</title>
+    <meta name="description" content="Automizly wdraża automatyzacje i agentów AI, które skracają procesy i zwiększają sprzedaż. Tworzymy szybkie MVP, integracje n8n/Make i pełne wdrożenia AI dla firm MŚP." />
+    <meta name="keywords" content="automatyzacja, AI, agenci AI, integracje, n8n, make, automizly, biznes, msp, chatbot, automatyzacje procesów" />
+    <meta name="author" content="Automizly" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="pl" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <title>Automizly – Automatyzacje i Agenci AI dla Biznesu (MŚP)</title>
-  <meta name="description" content="Automizly wdraża automatyzacje i agentów AI, które skracają procesy i zwiększają sprzedaż. Szybkie MVP, integracje n8n/Make oraz pełne wdrożenia AI dla firm MŚP." />
-  <meta name="robots" content="index,follow" />
-  <meta name="theme-color" content="#ffffff" />
+    <!-- Favicon + manifest -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
 
-  <!-- Canonical + hreflang -->
-  <link rel="canonical" href="https://automizly.pl/">
-  <link rel="alternate" hreflang="pl" href="https://automizly.pl/">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Ikony -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="/logo.png" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Automizly – Automatyzacje i Agenci AI dla Biznesu" />
+    <meta property="og:description" content="Automizly wdraża automatyzacje i agentów AI, które skracają procesy i zwiększają sprzedaż. Szybkie MVP, integracje n8n/Make, pełne wdrożenie." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://automizly.pl/" />
+    <meta property="og:image" content="https://automizly.pl/og-image.png" />
+    <meta property="og:locale" content="pl_PL" />
 
-  <!-- Open Graph -->
-  <meta property="og:site_name" content="Automizly" />
-  <meta property="og:title" content="Automizly – Automatyzacje i Agenci AI dla Biznesu" />
-  <meta property="og:description" content="Automatyzacje i agenci AI, które realnie skracają procesy i podnoszą sprzedaż." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://automizly.pl/" />
-  <meta property="og:image" content="https://automizly.pl/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:locale" content="pl_PL" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Automizly – Automatyzacje i Agenci AI dla Biznesu" />
+    <meta name="twitter:description" content="Automizly wdraża automatyzacje i agentów AI, które skracają procesy i zwiększają sprzedaż." />
+    <meta name="twitter:image" content="https://automizly.pl/og-image.png" />
+    <meta name="twitter:site" content="@automizly" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Automizly – Automatyzacje i Agenci AI dla Biznesu" />
-  <meta name="twitter:description" content="Szybkie MVP, integracje n8n/Make i pełne wdrożenia AI dla MŚP." />
-  <meta name="twitter:image" content="https://automizly.pl/og-image.png" />
-
-  <!-- Schema.org: Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Automizly",
-    "url": "https://automizly.pl",
-    "logo": "https://automizly.pl/logo.png",
-    "description": "Automizly specjalizuje się w automatyzacji procesów i wdrożeniach AI (agenci, chatboty, integracje n8n/Make, szybkie MVP).",
-    "contactPoint": [{
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "email": "automizly@gmail.com",
-      "telephone": "+48 693 945 798",
-      "areaServed": "PL",
-      "availableLanguage": ["pl","en"]
-    }],
-    "sameAs": ["https://www.linkedin.com/company/automizly"]
-  }
-  </script>
-
-  <!-- Schema.org: WebSite + SearchAction -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "url": "https://automizly.pl",
-    "name": "Automizly",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://automizly.pl/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Automizly",
+      "url": "https://automizly.pl",
+      "logo": "https://automizly.pl/logo.png",
+      "description": "Automizly wdraża automatyzacje i agentów AI, które skracają procesy i zwiększają sprzedaż. Szybkie MVP, integracje n8n/Make, pełne wdrożenie.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+48-000-000-000",
+        "contactType": "Customer Service",
+        "email": "kontakt@automizly.pl",
+        "areaServed": "PL",
+        "availableLanguage": ["Polish", "English"]
+      },
+      "sameAs": [
+        "https://linkedin.com/company/automizly"
+      ]
     }
-  }
-  </script>
+    </script>
+    <script type="module" crossorigin src="/assets/index-B0_bvTkH.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DMU-PFEi.css">
+  </head>
 
-  <!-- Schema.org: LocalBusiness (SEO lokalne) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Automizly",
-    "image": "https://automizly.pl/logo.png",
-    "url": "https://automizly.pl",
-    "telephone": "+48 693 945 798",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "ul. Oleska 2A",
-      "addressLocality": "Opole",
-      "postalCode": "46-024",
-      "addressCountry": "PL"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 50.667,
-      "longitude": 17.933
-    },
-    "openingHours": "Mo-Fr 09:00-17:00",
-    "sameAs": [
-      "https://www.linkedin.com/company/automizly",
-      "https://www.facebook.com/automizly"
-    ]
-  }
-  </script>
-
-  <!-- Schema.org: BreadcrumbList (okruchy nawigacji) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Strona główna",
-        "item": "https://automizly.pl/"
-      }
-    ]
-  }
-  </script>
-
-  <!-- Fonty + bundle -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" crossorigin href="/assets/index-DMU-PFEi.css">
-  <script type="module" crossorigin src="/assets/index-C9sJ2zBa.js"></script>
-</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
